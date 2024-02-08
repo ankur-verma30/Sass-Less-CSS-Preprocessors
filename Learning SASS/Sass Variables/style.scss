@@ -1,0 +1,28 @@
+$borderDefinition:1px solid black;
+$Border-Radius:10px;
+
+.intro{
+    color: red;
+    border: $borderDefinition;
+    border-radius: $Border-Radius;
+    text-align: center;
+    padding: 1px ;
+}
+// as you can see the border and border radius are repeatedly used hence can be used as the variable
+.content{
+    border: $borderDefinition;
+    border-radius:$Border-Radius;
+    display: flex;
+    color: greenyellow;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    p{
+        color: purple;
+        text-decoration: underline;
+        span{
+            display: block;
+            text-transform: capitalize;
+        }
+    }
+}

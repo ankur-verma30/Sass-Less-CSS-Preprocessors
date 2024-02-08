@@ -1,0 +1,25 @@
+.intro {
+  color: red;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1px;
+}
+
+.content {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  color: greenyellow;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content p {
+  color: purple;
+  text-decoration: underline;
+}
+.content p span {
+  display: block;
+  text-transform: capitalize;
+}/*# sourceMappingURL=style.css.map */
