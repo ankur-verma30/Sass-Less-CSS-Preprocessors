@@ -1,0 +1,34 @@
+$font-size: 10;
+$second-font-size: 20;
+$unit: px;
+.card {
+  padding: 10+10 + px;
+  //this is the use of the 
+  margin: 10px%10px;
+  //we can use variable also
+  border-radius: $font-size + $second-font-size + $unit;
+}
+
+//use of the boolean operator in scss
+// true and value gives value
+//false and value gives false
+div {
+  padding: 10px==10px and 20px; //hence it will give true as it is true and if we put value with the true statement it will give the value as the output of the code
+  margin: 10px==10px and 20px==20px; //gives true as both the conditions are true in this case
+
+  //using not operator as the boolean operator
+  border: not(10px ==10px);
+}
+
+//similary we can use or operator also
+
+//how to use divison operator 
+$operand1 :10;
+$operand2:4;
+$operand3: 10/4;
+$units:px;
+div{
+    margin-top: $operand1 / $operand2+$units;//this si deprivated and not widely used in sass try with the variables only
+    border-radius: $operand3+$units;
+}
+

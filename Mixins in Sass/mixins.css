@@ -35,4 +35,10 @@
   padding: 10px 24px;
   border-radius: 24px;
   background: linear-gradient(to right, rgba(124, 234, 196, 0.989), rgba(235, 225, 189, 0.789));
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    background-color: green;
+  }
 }/*# sourceMappingURL=mixins.css.map */

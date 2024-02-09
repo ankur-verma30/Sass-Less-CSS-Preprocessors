@@ -1,0 +1,16 @@
+.card {
+  padding: 20px;
+  margin: 0px;
+  border-radius: 30px;
+}
+
+div {
+  padding: 20px;
+  margin: true;
+  border: false;
+}
+
+div {
+  margin-top: 2.5px;
+  border-radius: 2.5px;
+}/*# sourceMappingURL=operator.css.map */

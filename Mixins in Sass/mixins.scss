@@ -15,7 +15,11 @@
   $radius: 24px
 ) {
   border-radius: $radius;
-  background: linear-gradient($gradientDirection, $first-color, $last-color);//can put the default value of all the variables
+  background: linear-gradient(
+    $gradientDirection,
+    $first-color,
+    $last-color
+  ); //can put the default value of all the variables
 }
 
 #small-button {
@@ -34,8 +38,9 @@
   @include baseStyles();
   padding: 10px 24px;
   @include customStyles(
-    $first-color : rgba(127, 134, 156, 0.789),
-    $last-color : rgba(25, 25, 45, 0.1),$gradientDirection: to right
+    $first-color: rgba(127, 134, 156, 0.789),
+    $last-color: rgba(25, 25, 45, 0.1),
+    $gradientDirection: to right
   );
 }
 
@@ -47,4 +52,16 @@
     rgba(124, 234, 196, 0.989),
     rgba(235, 225, 189, 0.789)
   );
+}
+
+//using content in the mixins
+@mixin media($max-width) {
+  @media screen and (max-width: $max-width) {
+    @content;
+  }
+}
+@include media(720px) {
+  body {
+    background-color: green;
+  }
 }
