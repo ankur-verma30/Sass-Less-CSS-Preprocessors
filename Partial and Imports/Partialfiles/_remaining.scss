@@ -1,0 +1,48 @@
+//this > is used to select the direct child element
+ul {
+  list-style: none;
+  > li {
+    font-size: 24px;
+  }
+}
+
+//refrencing the child container with parent container
+.container {
+  font-size: 36px;
+  &:hover {
+    background-color: yellow;
+    &:nth-child(1) {
+      text-decoration: underline;
+    }
+  }
+  //can also make the new class which have a same name as parent
+  &-first {
+    color: red;
+  }
+  //can change the direction for the container when these styles are applied
+  [dir="rtl"] & {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+//the & sign should be written cwith caution otherwise the css will not be compiled
+.container {
+  font-size: 36px;
+  span & {
+    color: green;
+  }
+}
+
+section {
+  transition: {
+    property: background-color;
+    duration: 2s;
+    delay: 3s;
+    timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  //for making rest of the margin auto write it befor the nesting
+  margin: auto {
+    top: 10px;
+    bottom: 20px;
+  }
+}

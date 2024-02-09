@@ -1,0 +1,38 @@
+#small-button {
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  color: white;
+  padding: 10px 34px;
+  border-radius: 34px;
+  background: linear-gradient(to right, rgba(122, 34, 56, 0.789), rgba(255, 255, 0, 0.001));
+}
+
+#large-button {
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 24px;
+  background: linear-gradient(to right, rgba(127, 134, 156, 0.789), rgba(25, 25, 45, 0.1));
+}
+
+.card {
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 24px;
+  background: linear-gradient(to right, rgba(124, 234, 196, 0.989), rgba(235, 225, 189, 0.789));
+}/*# sourceMappingURL=mixins.css.map */

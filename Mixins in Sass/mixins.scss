@@ -1,0 +1,50 @@
+@mixin baseStyles {
+  margin: 10px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  color: white;
+}
+
+@mixin customStyles(
+  $gradientDirection,
+  $first-color,
+  $last-color,
+  $radius: 24px
+) {
+  border-radius: $radius;
+  background: linear-gradient($gradientDirection, $first-color, $last-color);//can put the default value of all the variables
+}
+
+#small-button {
+  //styles that are common in all the components
+  @include baseStyles();
+  padding: 10px 34px;
+  @include customStyles(
+    to right,
+    rgba(122, 34, 56, 0.789),
+    rgba(255, 255, 0, 0.001),
+    34px
+  );
+}
+//can use interchangeibly but we have to mention all of the them to maintain the order of the arguments
+#large-button {
+  @include baseStyles();
+  padding: 10px 24px;
+  @include customStyles(
+    $first-color : rgba(127, 134, 156, 0.789),
+    $last-color : rgba(25, 25, 45, 0.1),$gradientDirection: to right
+  );
+}
+
+.card {
+  @include baseStyles();
+  padding: 10px 24px;
+  @include customStyles(
+    to right,
+    rgba(124, 234, 196, 0.989),
+    rgba(235, 225, 189, 0.789)
+  );
+}
