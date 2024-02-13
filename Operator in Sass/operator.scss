@@ -28,7 +28,28 @@ $operand2:4;
 $operand3: 10/4;
 $units:px;
 div{
-    margin-top: $operand1 / $operand2+$units;//this si deprivated and not widely used in sass try with the variables only
+    // margin-top: $operand1 / $operand2+$units;//this is deprivated and not widely used in sass try with the variables only
     border-radius: $operand3+$units;
 }
 
+//use of the equal and not equals operators
+div{
+  enable-background: (5px 7px 10px )==(5px 7px 10px);//this returns true whereas
+  border-style: (5px 7px 10px)==(5px,7px,10px); //it gives false as space seperated list is not equal to comma seperated list
+  font-style: (5px 7px 10px)== 5px 7px 10px;//this does not give correct result hence cannot be compared
+}
+
+
+//can compare map also in scss
+div{
+  enable-background: ("first":10px,"second":20px)==("first":10px,"second":20px);//this returns true whereas
+  border-style:  ("first":10px,"second":20px)==("first":20px,"second":20px); //it gives false 
+  font-style:  ("first":10px,"second":20px)==("first":10px);//it gives false if the size of the map is not same 
+}
+
+//can use the relational operators
+div{
+  enable-background: 10>2;//this returns true whereas
+  border-style: 10<=12; //it gives false 
+  font-style: 4>2;//it gives false if the size of the map is not same 
+}
