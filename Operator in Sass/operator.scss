@@ -28,7 +28,7 @@ $operand2:4;
 $operand3: 10/4;
 $units:px;
 div{
-    // margin-top: $operand1 / $operand2+$units;//this is deprivated and not widely used in sass try with the variables only
+    // margin-top: $operand1 / $='operand2+$units;//this is deprivated and not widely used in sass try with the variables only
     border-radius: $operand3+$units;
 }
 

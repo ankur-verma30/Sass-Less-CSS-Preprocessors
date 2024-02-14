@@ -1,0 +1,41 @@
+//make a placeholder for the cards
+%card {
+  color: green;
+  text-decoration: none;
+  outline: none;
+  grid-gap: 2rem;
+}
+
+.card-1 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+
+  display: inline-block;
+  margin: 10px;
+  padding: 14px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.card-2 {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 320px;
+  @extend .card-1;
+  @extend %card;
+}
+
+.card-3 {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  left: 340px;
+  @extend .card-1;
+  border: 1px solid black;
+  list-style-type: disc;
+  @extend %card;
+}

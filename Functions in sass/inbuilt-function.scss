@@ -1,0 +1,44 @@
+@use "sass:math";
+
+div {
+  padding: math.ceil($number: 4.1px);
+}
+
+.floor-fuction {
+  border: math.floor($number: 3.9px);
+}
+
+.max-fuction {
+  border-radius: math.max(23, 32, 45) + px;
+}
+
+.max-fuction {
+  border: math.min(1, 2, 3, 4) + px;
+}
+
+.round {
+  font-weight: math.round(500.6) + px; //get round off to 501
+  font: math.round(50.2) + px; //get round off to 50
+}
+
+$max-width: math.max(3, 4, 5, 6, 7, 8, 9, 10, 11) + px;
+
+div {
+  font-size: $max-width;
+}
+
+$abs-value: math.abs(-45.5);
+$power: math.pow(3, 4);
+$square-root: math.sqrt(50) + px;
+
+$compatible: math.compatible(2px, 1px);
+$not-compatible: math.compatible(2px, 1rem);
+
+
+.abs-value {
+  margin: $abs-value + px;
+  padding: $power + px;
+  margin-top: $square-root;
+  border: $compatible;
+  border-radius: $not-compatible;
+}

@@ -1,0 +1,13 @@
+$width: 1000px;
+$times: 1;
+
+//this is the default width for the function if no values is passed
+@function double-width($width: 0px, $times: 2) {
+  @return $width * $times;
+}
+
+div {
+  $double-width: double-width($width);
+  padding: $double-width;
+  border: double-width(0px, 4);
+}
