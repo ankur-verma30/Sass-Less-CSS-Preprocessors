@@ -1,0 +1,38 @@
+@use "sass:string";
+
+div {
+  font-family: string.quote($string: "comic-sans-ms");
+  font-family: string.unquote($string: "comic-sans-ms");
+}
+
+.root {
+  font-family: string.index(
+    $string: "Franklin Gotham Medium",
+    $substring: "Medium"
+  );
+}
+
+.insert {
+  font-size: string.insert("Franklin  Medium", Gothlic, 10);
+  //it works like all the other programming languages like using negative numbers will add from the back
+}
+
+.length {
+  font-size: string.length("Franklin  Medium") + px;
+}
+.slice{
+    font-family: string.slice("Franklin",2,7);
+}
+
+.toUpperCase{
+    font-family: string.to-upper-case("Franklin Medium");
+}
+
+.tolowercase{
+    font-family: string.to-lower-case($string: "Franklin Medium");
+}
+
+//for generating the unique id we have a string function
+.uniqueId{
+    font-family: string.unique-id();
+}

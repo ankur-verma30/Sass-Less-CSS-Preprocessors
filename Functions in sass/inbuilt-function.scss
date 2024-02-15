@@ -35,10 +35,25 @@ $compatible: math.compatible(2px, 1px);
 $not-compatible: math.compatible(2px, 1rem);
 
 
-.abs-value {
+.abs-value{
   margin: $abs-value + px;
   padding: $power + px;
   margin-top: $square-root;
   border: $compatible;
   border-radius: $not-compatible;
+}
+
+.division_fuction{
+  // padding: math.div(1,0);//this becomes infinity
+  padding:math.div(0,1)+px;
+  margin: math.div(100px,5);
+  border: math.div(100,2)+px;//don not add unit to the divisior it will generate the error 
+}
+
+.percentage_function{
+  padding: math.percentage($number: .22);//the value should be less than equal to 1
+}
+
+.random_function{
+  padding: math.random($limit: 7);
 }

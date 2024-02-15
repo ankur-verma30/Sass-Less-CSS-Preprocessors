@@ -29,4 +29,18 @@ div {
   margin-top: 7.0710678119px;
   border: true;
   border-radius: false;
+}
+
+.division_fuction {
+  padding: 0px;
+  margin: 20px;
+  border: 50px;
+}
+
+.percentage_function {
+  padding: 22%;
+}
+
+.random_function {
+  padding: 2;
 }/*# sourceMappingURL=inbuilt-function.css.map */

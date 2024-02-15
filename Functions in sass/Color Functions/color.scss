@@ -1,0 +1,15 @@
+@use "sass:color";
+
+$name-background:pink;
+$rgb-background:rgb(79,184,69);
+$hex-background:#4fb845;
+$hsla-background:hsl(115,45%,50%);
+
+div{
+width: 500px;
+height: 200px;
+background-color: red($color:$hex-background)+px;//it will return the percentage of the red through it
+color:red($hsla-background);
+background: alpha($color: $rgb-background);
+color: lightness($color: $rgb-background);
+}
