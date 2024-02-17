@@ -1,0 +1,26 @@
+@use "sass:list";
+
+$map: (
+  width: 10px,
+  height: 10px,
+);
+$string: Arial, Helvetica, sans-serif;
+
+div {
+  padding: length($list: 10px 20px 30px 40px) + px;
+  margin: length($list: $map) + px;
+  margin-top: nth($list: 2px 3px 4px, $n: 2);
+  font-family: set-nth(
+    $list: $string,
+    $n: 2,
+    $value: monospace
+  ); //this function is 1-index based on 0
+  padding-left: zip(1px 2px 2px, 1px 2px 2px, 1px 2px 2px);
+  border: index($list: 1px solid red, $value:1px);
+
+  $list1:1px 2px 3px;
+  $list2: 3px 4px 5px;
+  box-sizing: join($list1: $list1, $list2:$list2 , $separator:auto);
+}
+
+

@@ -1,0 +1,24 @@
+@use "sass:selector";
+
+$select:selector.nest('ul', 'li' ,'a');//method 1
+$select2:selector.nest(".alert , .warning",'p');//method 2
+$select3:selector.nest(".alert","&:hover");//method 3
+$select4:selector.nest(".armament",'&__hakki');//method 4
+
+#{$select}{
+    padding: 10px;
+    
+}
+
+#{$select2}{
+    padding: 10px;
+}
+
+#{$select3}{
+    padding: 20px;
+}
+
+#{$select4}{
+    border: 1px solid black;
+}
+

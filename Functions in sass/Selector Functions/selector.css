@@ -1,0 +1,15 @@
+ul li a {
+  padding: 10px;
+}
+
+.alert p, .warning p {
+  padding: 10px;
+}
+
+.alert:hover {
+  padding: 20px;
+}
+
+.armament__hakki {
+  border: 1px solid black;
+}/*# sourceMappingURL=selector.css.map */
